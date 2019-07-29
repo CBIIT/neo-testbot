@@ -1,0 +1,22 @@
+group : Test2
+verbosity : 1
+save_dir : 'demo'
+loglevel : DEBUG
+logfile : test2.log
+db_host : localhost
+db_port : 7474
+tests :
+  - name : Test2.1
+    desc : Description of Test2.1
+    query : |
+      match (f) return count(f)
+    evaluate : returns_some_rows
+  - name : Test2.2
+    desc : Skip it
+    skip : test skipping
+  - name : Test3.2
+    desc : Todo it
+    todo : need to get a tuit
+    query : |
+      match (f) return count(f)
+    evaluate : returns_no_rows

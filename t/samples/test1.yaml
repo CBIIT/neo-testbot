@@ -1,0 +1,19 @@
+group : Test1
+verbosity : 1
+save_dir : 'demo'
+loglevel : TAP
+logfile : test1.log
+db_host : localhost
+db_port : 7474
+tests :
+  - name : Test1.1
+    desc : Description of Test1.1
+    query : |
+      match (f) return count(f)
+    evaluate : returns_some_rows
+  - name : Test1.2
+    desc : Multiquery
+    queries :
+      - match (f:project) return f.name
+      - match (g:project) return g.name
+    evaluate : returns_same_n_rows
