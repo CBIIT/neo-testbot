@@ -121,7 +121,7 @@ the pass state.
 
 # SEE ALSO
 
-[Neo4j::TestBot::Data::Data](lib/TestBot/README.Data.md), [TestBot::Data::Data::Unit](lib/TestBot/Data/README.Unit.md), [TAP::Harness](https://metacpan.org/pod/TAP::Harness), [App::Prove](https://metacpan.org/pod/App::Prove).
+[Neo4j::TestBot::Data](lib/Neo4j/TestBot/README.Data.md), [Neo4j::TestBot::Data::Unit](lib/Neo4j/TestBot/Data/README.Unit.md), [TAP::Harness](https://metacpan.org/pod/TAP::Harness), [App::Prove](https://metacpan.org/pod/App::Prove).
 
 # AUTHOR
 
