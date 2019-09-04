@@ -8,7 +8,7 @@ Neo4j::TestBot::Data - Automated tests for graph metadata
     $ git clone https://github.com/CBIIT/neo-testbot.git
     $ cd neo-testbot
     $ perl Build.PL
-    $ ./Build
+    $ ./Build installdeps
     $ ./Build test
     $ ./Build install
     
